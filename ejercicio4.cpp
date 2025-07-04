@@ -37,6 +37,22 @@ int main(){
 		cout<<endl;
 	}
 		
+	cout<< "---------------MATRIZ RESULTANTE------------"<<endl;
+	cout<<endl;	
+		
+		for(int i=0; i<4; i++){
+			int aux= matriz[F1][i];
+			matriz[F1][i]=matriz[F2][i];
+			matriz[F2][i]=aux;
+		}
+				
+		for(int i=0; i<4; i++){
+		for(int j=0; j<4; j++){
+			cout<<matriz[i][j]<<" ";
+		}
+		cout<<endl;
+	}
+		
 	}else{
 		cout<<endl;
 		cout<<"Numero de fila inexistente"<<endl;
