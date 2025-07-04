@@ -8,6 +8,7 @@ int main (){
 	cout << "==========================================================" << endl;
     cout << "               BUSCA EL NUMERO (MD)" << endl;
     cout << "==========================================================" << endl;
+	cout<<endl;
 	
 	for(int i=0; i<3; i++){
 		for(int j=0; j<3; j++){
@@ -24,6 +25,20 @@ int main (){
 	cout<<"El valor "<<valor<<" se encuentra en:"<<endl;
 	cout<<endl;
 	
+	for(int i=0; i<3; i++){
+		for(int j=0; j<3; j++){
+			cout<<matriz[i][j]<<" ";
+		}
+		
+	cout<<"  ";
+	
+		for(int j=0; j<3; j++){
+			if(matriz[i][j]==valor){
+			cout<<"Fila "<<i<<", Columna "<<j;
+			}
+		}
+		cout<<endl;
+	}
 	
 	return 0;
 }
