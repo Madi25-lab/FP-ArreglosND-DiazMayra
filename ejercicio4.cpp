@@ -3,6 +3,7 @@
 using namespace std;
 int main(){
 	int matriz[4][4];
+	int F1=0, F2=0;
 	
 	cout << "==========================================================" << endl;
     cout << "             INTERCAMBIO DE FILAS (MD)" << endl;
@@ -17,6 +18,15 @@ int main(){
 	}
 	system ("cls");
 	
+	cout<<"Ingrese la fila que desea cambiar: ";
+	cin>>F1;
+	if(F1>=0 && F1<=3){
+		cout<<endl;
+		cout<<"Por el numero de fila: ";
+		cin>>F2;
+		if (F2>=0 && F2<=3){
+	
+	cout<<endl;	
 	cout<< "-------------------MATRIZ------------------"<<endl;
 	cout<<endl;
 	
@@ -26,7 +36,16 @@ int main(){
 		}
 		cout<<endl;
 	}
-	
+		
+	}else{
+		cout<<endl;
+		cout<<"Numero de fila inexistente"<<endl;
+	}
+    }else{
+    	cout<<endl;
+		cout<<"Numero de fila inexistente"<<endl;
+	}
+
 	return 0;
 }
 	
