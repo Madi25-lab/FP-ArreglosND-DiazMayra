@@ -39,6 +39,16 @@ int main (){
 		for(int k=i+1; k<5-i; k++){
 		cout<<matriz[k][4-i]<<" ";	
 		}
+		if(4-i!=i){
+			for(int j=3-i; j>=i; j--){
+		    cout<<matriz[4-i][j]<<" ";	
+		    }
+		}
+		if(4-i!=i){
+			for(int k=3-i; k>i; k--){
+		    cout<<matriz[k][i]<<" ";	
+		    }
+		}
 	}
 	
 	return 0;
