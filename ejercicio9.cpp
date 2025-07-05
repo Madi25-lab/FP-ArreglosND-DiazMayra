@@ -25,6 +25,17 @@ int main(){
 	    }
     }
 	system("cls");
+	
+	cout<<"CUADRADO LATINO";
+	cout<<endl;
+	
+	for(int i=0; i<n; i++){
+		for(int j=0; j<n; j++){
+			matriz[i][j]=(j-i+n)%n+1;
+			cout<<matriz[i][j]<<" ";
+		}
+		cout<<endl;
+	}
 			
 	}else{
     	cout<<endl;
