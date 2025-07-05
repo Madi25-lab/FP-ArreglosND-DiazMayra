@@ -25,7 +25,7 @@ int main(){
 	
 	for(int i=0; i<4; i++){
 		for(int j=0; j<4; j++){
-			cout<<matriz[i][j]<<"  ";
+			cout<<matriz[i][j]<<" ";
 		}
 		cout<<endl;
 	}
@@ -40,10 +40,27 @@ int main(){
 		}
 	}
 }
+    cout<<endl;
+	cout<<"--------------------------RESULTADO----------------------------"<<endl;
+    
 	cout<<endl;
-	cout<<"El numero maximo de la matriz es: "<<M;
+	cout<<"El maximo valor de la matriz es: "<<M<<endl;
 	cout<<endl;
-	cout<<"El numero minimo de la matriz es: "<<N;	
+	cout<<"El minimo valor de la matriz es: "<<N<<endl;
+	cout<<endl;	
 	
+    for(int i=0; i<4; i++){
+         for(int j=0; j<4; j++){
+			if(matriz[i][j]==M){
+				cout<<endl;
+				cout<<"El max valor se encuentra en la fila "<<i<<", columna "<<j<<endl;
+			}
+			if(matriz[i][j]==N){
+				cout<<endl;
+				cout<<"El min valor se encuentra en la fila "<<i<<", columna "<<j<<endl;
+			}
+		}
+	}
+
 	return 0;
 }
